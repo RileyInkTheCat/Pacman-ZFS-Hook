@@ -13,7 +13,7 @@ makedepends=()
 checkdepends=()
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
-source=("$pkgname-$pkgver.tar.gz::https://github.com/MustachedSquid/TODO:THIS")
+source=("$pkgname-$pkgver.tar.gz::https://github.com/MustachedSquid/Pacman-ZFS-Hook/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 sha256sums=("")
 
 package() {
