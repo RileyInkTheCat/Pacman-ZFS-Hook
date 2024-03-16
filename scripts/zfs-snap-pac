@@ -10,7 +10,7 @@ bootfs="none"
 snapshotName="zfs-snap-pac-1-"
 
 GetBootFS() {
-    bootfs=$(zpool get bootfs -o value -pH)
+    bootfs=$(zpool get bootfs -o value -pH | grep -v '-' | tail -n1)
 }
 
 GetSnapshotName() {
